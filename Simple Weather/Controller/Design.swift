@@ -12,24 +12,73 @@ import UIKit
 extension ViewController {
     
     //Aplica Gradiente para View
-    func applyGradient() {
+    func applyGradient(condition: String) {
         let gradient = CAGradientLayer()
         let invertedGradient = CAGradientLayer()
         
-        let condition = "sunny"
+        //let condition = "snow"
         
         var firstColor: UIColor
         var secondColor: UIColor
         
-        if condition == "sunny"{
-          firstColor = hexStringToUIColor(hex: "#6e3f98")
-          secondColor = hexStringToUIColor(hex: "#d6ab97")
-          gradient.colors = [firstColor.cgColor,secondColor.cgColor]
-          invertedGradient.colors = [secondColor.cgColor,firstColor.cgColor]
+        switch condition {
+        case "clear sky": //Céu Limpo
+            firstColor = hexStringToUIColor(hex: "#0058dd")
+            secondColor = hexStringToUIColor(hex: "#4698e4")
+            gradient.colors = [firstColor.cgColor,secondColor.cgColor]
+            invertedGradient.colors = [secondColor.cgColor,firstColor.cgColor]
             
-        } else if condition == "Clouds" {
-            firstColor = hexStringToUIColor(hex: "#0234a0")
-            secondColor = hexStringToUIColor(hex: "#7299b8")
+        case "few clouds": // Poucas nuvens
+            firstColor = hexStringToUIColor(hex: "#5b7fa9")
+            secondColor = hexStringToUIColor(hex: "#cdd1cf")
+            gradient.colors = [firstColor.cgColor,secondColor.cgColor]
+            invertedGradient.colors = [secondColor.cgColor,firstColor.cgColor]
+            
+        case "scattered clouds": //nuvens dispersas
+            firstColor = hexStringToUIColor(hex: "#4f5d6e")
+            secondColor = hexStringToUIColor(hex: "#bababa")
+            gradient.colors = [firstColor.cgColor,secondColor.cgColor]
+            invertedGradient.colors = [secondColor.cgColor,firstColor.cgColor]
+            
+        case "broken clouds": //nuvens quebradas
+            firstColor = hexStringToUIColor(hex: "#3e454d")
+            secondColor = hexStringToUIColor(hex: "#8f8f8f")
+            gradient.colors = [firstColor.cgColor,secondColor.cgColor]
+            invertedGradient.colors = [secondColor.cgColor,firstColor.cgColor]
+            
+        case "shower rain": //chuva de banho
+            firstColor = hexStringToUIColor(hex: "#3e454d")
+            secondColor = hexStringToUIColor(hex: "#8f8f8f")
+            gradient.colors = [firstColor.cgColor,secondColor.cgColor]
+            invertedGradient.colors = [secondColor.cgColor,firstColor.cgColor]
+            
+        case "rain": //Chuva
+            firstColor = hexStringToUIColor(hex: "#3e454d")
+            secondColor = hexStringToUIColor(hex: "#8f8f8f")
+            gradient.colors = [firstColor.cgColor,secondColor.cgColor]
+            invertedGradient.colors = [secondColor.cgColor,firstColor.cgColor]
+            
+        case "thunderstorm": //Trovoada
+            firstColor = hexStringToUIColor(hex: "#3e454d")
+            secondColor = hexStringToUIColor(hex: "#8f8f8f")
+            gradient.colors = [firstColor.cgColor,secondColor.cgColor]
+            invertedGradient.colors = [secondColor.cgColor,firstColor.cgColor]
+            
+        case "snow": //Neve
+            firstColor = hexStringToUIColor(hex: "#75a5d9")
+            secondColor = hexStringToUIColor(hex: "#afc8f2")
+            gradient.colors = [firstColor.cgColor,secondColor.cgColor]
+            invertedGradient.colors = [secondColor.cgColor,firstColor.cgColor]
+            
+        case "mist": //Névoa
+            firstColor = hexStringToUIColor(hex: "#75a5d9")
+            secondColor = hexStringToUIColor(hex: "#afc8f2")
+            gradient.colors = [firstColor.cgColor,secondColor.cgColor]
+            invertedGradient.colors = [secondColor.cgColor,firstColor.cgColor]
+            
+        default:
+            firstColor = hexStringToUIColor(hex: "#6e3f98")
+            secondColor = hexStringToUIColor(hex: "#d6ab97")
             gradient.colors = [firstColor.cgColor,secondColor.cgColor]
             invertedGradient.colors = [secondColor.cgColor,firstColor.cgColor]
         }
