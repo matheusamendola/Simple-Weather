@@ -28,35 +28,18 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
     @IBOutlet weak var Weather: UILabel!
     @IBOutlet weak var Phrase: UILabel!
     @IBOutlet weak var City: UILabel!
+    @IBOutlet weak var Updating: UIActivityIndicatorView!
     
     
     @IBAction func SwipeAction(_ sender: Any) {
         let generator = UIImpactFeedbackGenerator(style: .soft)
         generator.impactOccurred()
-        performSegue(withIdentifier: "detalied", sender: nil)
+        getInformation()
     }
     
-
-    
     override func viewDidLoad() {
-        // in the function you want to grab the user's location from
-        // Ask for Authorisation from the User.
-        self.locationManager.requestAlwaysAuthorization()
-
-        // For use in foreground
-        // You will need to update your .plist file to request the authorization
-        self.locationManager.requestWhenInUseAuthorization()
-
-        if CLLocationManager.locationServicesEnabled() {
-            locationManager.delegate = self
-            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
-            locationManager.startUpdatingLocation()
-        }
-
-        //applyGradient()
         super.viewDidLoad()
-        print(config.metric)
-        
+        getInformation()
     }
     
     func registerSettingsBundle(){
@@ -64,7 +47,25 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
         UserDefaults.standard.register(defaults: appDefaults)
     }
     
+    //Pega informacoes do local do usuário, aplica gradiente e coloca na tela inicial
+    func getInformation(){
+        //Solicita acesso a localizacao
+        self.locationManager.requestAlwaysAuthorization()
+        self.locationManager.requestWhenInUseAuthorization()
 
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation()
+        }
+        print(config.metric)
+    }
+    func startUpdate(){
+        Updating.startAnimating()
+    }
+    func stopUpdate(){
+        Updating.stopAnimating()
+    }
 }
 
 

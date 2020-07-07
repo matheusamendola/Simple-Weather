@@ -16,9 +16,6 @@ extension ViewController{
         let APPID = "f62231240a0e6bc332f2224ab784e5ff"
         let session = URLSession.shared
         let weatherURL = URL(string: "http://api.openweathermap.org/data/2.5/weather?lat=\(lat)&lon=\(lon)&units=\(unit)&appid=\(APPID)")!
-        
-        //let weatherURL = URL(string: "http://api.openweathermap.org/data/2.5/weather?q=\(city),br?&units=\(unit)&APPID=\(APPID)")!
-        
         let dataTask = session.dataTask(with: weatherURL) {
             (data: Data?, response: URLResponse?, error: Error?) in
             if let error = error { print("Erro: \(error)")}
@@ -37,7 +34,7 @@ extension ViewController{
                                 if let sysDictionary = jsonObj.value(forKey: "sys") as? NSDictionary {
                                     let city = sysDictionary.value(forKey: "name")
                                     DispatchQueue.main.async {
-                                        self.City.text = "\(city)"}
+                                        self.City.text = "\(city ?? " ")"}
                                 }
                         
                         } else {

@@ -17,6 +17,7 @@ import NVActivityIndicatorView
 
 extension ViewController {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        startUpdate()
         var units: String
         if config.metric == 0{
             units = "metric"
@@ -47,6 +48,8 @@ extension ViewController {
                 let description = jsonWeather["description"].string
                 self.Phrase.text = "\(jsonWeather["description"])"
                 self.applyGradient(condition: description!)
+                
+                self.stopUpdate()
 
             }
         }

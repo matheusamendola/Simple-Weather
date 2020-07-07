@@ -20,6 +20,7 @@ class SettingsViewController: UIViewController {
     
     
     override func viewDidLoad() {
+        overrideUserInterfaceStyle = .light
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

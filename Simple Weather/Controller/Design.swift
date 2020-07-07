@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension ViewController {
+extension UIViewController {
     
     //Aplica Gradiente para View
     func applyGradient(condition: String) {
@@ -130,4 +130,7 @@ extension ViewController {
             alpha: CGFloat(1.0)
         )
     }
+    
+
+    
 }
