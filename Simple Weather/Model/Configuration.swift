@@ -10,6 +10,9 @@ import Foundation
 
 enum UserDefaultsKeys: String {
     case metrical = "metrical"
+    case notifications = "notification"
+    case latitude = "latitude"
+    case longitude = "longitude"
 }
 
 struct configuration {
@@ -22,6 +25,33 @@ struct configuration {
         }
         set{
             defaults.set(newValue, forKey: UserDefaultsKeys.metrical.rawValue)
+        }
+    }
+    
+    var notification: Bool {
+        get{
+            return defaults.bool(forKey: UserDefaultsKeys.notifications.rawValue)
+        }
+        set{
+            defaults.set(newValue, forKey: UserDefaultsKeys.notifications.rawValue)
+        }
+    }
+    
+    var latitude: Double{
+        get{
+            return defaults.double(forKey: UserDefaultsKeys.latitude.rawValue)
+        }
+        set{
+            defaults.set(newValue, forKey: UserDefaultsKeys.latitude.rawValue)
+        }
+    }
+    
+    var longitude: Double{
+        get{
+            return defaults.double(forKey: UserDefaultsKeys.longitude.rawValue)
+        }
+        set{
+            defaults.set(newValue, forKey: UserDefaultsKeys.longitude.rawValue)
         }
     }
     

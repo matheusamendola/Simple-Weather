@@ -11,16 +11,16 @@ import UIKit
 class SettingsViewController: UIViewController {
 
     @IBOutlet weak var scMetrical: UISegmentedControl!
-    
+
     var config = configuration.shared
     
     @IBAction func changeMetrical(_ sender: UISegmentedControl) {
         config.metric = sender.selectedSegmentIndex
     }
     
-    
     override func viewDidLoad() {
         overrideUserInterfaceStyle = .light
+
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

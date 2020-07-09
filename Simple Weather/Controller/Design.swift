@@ -130,7 +130,4 @@ extension UIViewController {
             alpha: CGFloat(1.0)
         )
     }
-    
-
-    
 }

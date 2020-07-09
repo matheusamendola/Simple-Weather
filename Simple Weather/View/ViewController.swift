@@ -19,7 +19,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
     let locationManager = CLLocationManager() // create Location Manager object
     let apiKey = "f62231240a0e6bc332f2224ab784e5ff"
 
-    
+
     var latitude = 11.344533
     var longitude = 104.33322
     let config = configuration.shared
@@ -29,6 +29,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
     @IBOutlet weak var Phrase: UILabel!
     @IBOutlet weak var City: UILabel!
     @IBOutlet weak var Updating: UIActivityIndicatorView!
+    @IBOutlet weak var lbMin: UILabel!
+    @IBOutlet weak var lbMax: UILabel!
+    
+    
+ 
+    @IBOutlet weak var ivRightNow: UIImageView!
     
     
     @IBAction func SwipeAction(_ sender: Any) {
@@ -40,6 +46,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         getInformation()
+ 
     }
     
     func registerSettingsBundle(){
