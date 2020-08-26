@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		81980CA56B6828C83A48E080 /* Pods_Simple_Weather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A595ABDB2C144006D55C4B /* Pods_Simple_Weather.framework */; };
-		E04C506B24B28A21003FB198 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E04C506A24B28A21003FB198 /* Settings.bundle */; };
 		E0C66EFB24B394C8008DF138 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C66EFA24B394C8008DF138 /* SettingsViewController.swift */; };
 		E0CA0BA724B233A500B5434D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CA0BA624B233A500B5434D /* AppDelegate.swift */; };
 		E0CA0BA924B233A500B5434D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CA0BA824B233A500B5434D /* SceneDelegate.swift */; };
@@ -19,7 +18,6 @@
 		E0E3A36824B255EB008D8180 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E3A36524B255EA008D8180 /* LaunchScreen.storyboard */; };
 		E0ECA89424B6360F00334897 /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ECA89324B6360F00334897 /* Locations.swift */; };
 		E0ECA89824B6435500334897 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ECA89724B6435500334897 /* Weather.swift */; };
-		E0F4592624B28FAE00E097A2 /* SettingsBundleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4592524B28FAE00E097A2 /* SettingsBundleHelper.swift */; };
 		E0F4592824B2973C00E097A2 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4592724B2973C00E097A2 /* Configuration.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,9 +38,8 @@
 		536927908368611C785440BF /* Pods-Simple Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple Weather.debug.xcconfig"; path = "Target Support Files/Pods-Simple Weather/Pods-Simple Weather.debug.xcconfig"; sourceTree = "<group>"; };
 		99A595ABDB2C144006D55C4B /* Pods_Simple_Weather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simple_Weather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF88EFA27DF98C8FB089A1C9 /* Pods-Simple Weather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple Weather.release.xcconfig"; path = "Target Support Files/Pods-Simple Weather/Pods-Simple Weather.release.xcconfig"; sourceTree = "<group>"; };
-		E04C506A24B28A21003FB198 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		E0C66EFA24B394C8008DF138 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		E0CA0BA324B233A400B5434D /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0CA0BA324B233A400B5434D /* Simple Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0CA0BA624B233A500B5434D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0CA0BA824B233A500B5434D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E0CA0BAA24B233A500B5434D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,7 +51,6 @@
 		E0ECA88124B5FA7900334897 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		E0ECA89324B6360F00334897 /* Locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
 		E0ECA89724B6435500334897 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
-		E0F4592524B28FAE00E097A2 /* SettingsBundleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBundleHelper.swift; sourceTree = "<group>"; };
 		E0F4592724B2973C00E097A2 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,7 +97,7 @@
 		E0CA0BA424B233A400B5434D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E0CA0BA324B233A400B5434D /* Weather.app */,
+				E0CA0BA324B233A400B5434D /* Simple Weather.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,11 +109,10 @@
 				E0CA0BBB24B2349200B5434D /* View */,
 				E0CA0BBA24B2348A00B5434D /* Model */,
 				E0CA0BA624B233A500B5434D /* AppDelegate.swift */,
-				E0CA0BAF24B233A700B5434D /* Assets.xcassets */,
 				E0CA0BA824B233A500B5434D /* SceneDelegate.swift */,
-				E0E3A36524B255EA008D8180 /* LaunchScreen.storyboard */,
 				E0E3A36324B255EA008D8180 /* Main.storyboard */,
-				E04C506A24B28A21003FB198 /* Settings.bundle */,
+				E0E3A36524B255EA008D8180 /* LaunchScreen.storyboard */,
+				E0CA0BAF24B233A700B5434D /* Assets.xcassets */,
 				E0CA0BB424B233A700B5434D /* Info.plist */,
 			);
 			path = "Simple Weather";
@@ -144,7 +139,6 @@
 			isa = PBXGroup;
 			children = (
 				E0CA0BBF24B2353200B5434D /* Design.swift */,
-				E0F4592524B28FAE00E097A2 /* SettingsBundleHelper.swift */,
 				E0ECA89324B6360F00334897 /* Locations.swift */,
 				E0ECA89724B6435500334897 /* Weather.swift */,
 			);
@@ -171,7 +165,7 @@
 			);
 			name = "Simple Weather";
 			productName = "Simple Weather";
-			productReference = E0CA0BA324B233A400B5434D /* Weather.app */;
+			productReference = E0CA0BA324B233A400B5434D /* Simple Weather.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -212,7 +206,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E04C506B24B28A21003FB198 /* Settings.bundle in Resources */,
 				E0E3A36824B255EB008D8180 /* LaunchScreen.storyboard in Resources */,
 				E0CA0BB024B233A700B5434D /* Assets.xcassets in Resources */,
 				E0E3A36724B255EB008D8180 /* Main.storyboard in Resources */,
@@ -269,7 +262,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0ECA89424B6360F00334897 /* Locations.swift in Sources */,
-				E0F4592624B28FAE00E097A2 /* SettingsBundleHelper.swift in Sources */,
 				E0CA0BAB24B233A500B5434D /* ViewController.swift in Sources */,
 				E0C66EFB24B394C8008DF138 /* SettingsViewController.swift in Sources */,
 				E0ECA89824B6435500334897 /* Weather.swift in Sources */,
@@ -422,6 +414,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = R647JTBWZR;
 				INFOPLIST_FILE = "Simple Weather/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
@@ -429,9 +422,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.matheusamendola.Simple-Weather";
-				PRODUCT_NAME = Weather;
+				PRODUCT_NAME = "Simple Weather";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -443,6 +436,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = 7LDY52P48T;
 				INFOPLIST_FILE = "Simple Weather/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
@@ -450,9 +444,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.matheusamendola.Simple-Weather";
-				PRODUCT_NAME = Weather;
+				PRODUCT_NAME = "Simple Weather";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

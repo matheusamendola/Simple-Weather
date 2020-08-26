@@ -44,14 +44,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
     }
     
     override func viewDidLoad() {
-        super.viewDidLoad()
         getInformation()
+        super.viewDidLoad()
  
-    }
-    
-    func registerSettingsBundle(){
-        let appDefaults = [String: AnyObject]()
-        UserDefaults.standard.register(defaults: appDefaults)
     }
     
     //Pega informacoes do local do usuário, aplica gradiente e coloca na tela inicial
@@ -65,7 +60,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
             locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
             locationManager.startUpdatingLocation()
         }
-        print(config.metric)
+
     }
     func startUpdate(){
         Updating.startAnimating()

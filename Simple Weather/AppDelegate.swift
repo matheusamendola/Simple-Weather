@@ -37,7 +37,6 @@ import UserNotifications
     }
     func applicationDidBecomeActive(_ application: UIApplication) {
 
-        SettingsBundleHelper.setVersionAndBuildNumber()
     }
     
 
