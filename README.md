@@ -12,5 +12,5 @@ Foi utilizado os seguintes pods:
 
 # Screenshots
 
- ![img1](https://github.com/matheusamendola/Simple-Weather/blob/master/Screenshots/01.png) ![img2](https://github.com/matheusamendola/Simple-Weather/blob/master/Screenshots/02.jpeg)
+ ![img1](https://github.com/matheusamendola/Simple-Weather/blob/master/Screenshots/01.png) ![img2](https://github.com/matheusamendola/Simple-Weather/blob/master/Screenshots/02.png)
  
